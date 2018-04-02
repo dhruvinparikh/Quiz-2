@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://service.my/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.my/">
+
+<xs:element name="camelCase" type="tns:camelCase"/>
+
+<xs:element name="camelCaseResponse" type="tns:camelCaseResponse"/>
+
+<xs:element name="reverseString" type="tns:reverseString"/>
+
+<xs:element name="reverseStringResponse" type="tns:reverseStringResponse"/>
+
+<xs:complexType name="reverseString">
+<xs:sequence>
+<xs:element name="strStr" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reverseStringResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="camelCase">
+<xs:sequence>
+<xs:element name="strMessage" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="camelCaseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
